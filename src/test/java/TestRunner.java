@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = {"src/test/features"},
-        tags = {"@Register"},
+        tags = {"@Search-SelectFirsService"},
         plugin = {
                 "json:target/cucumber.json",
                 "junit:target/cucumber-results.xml",

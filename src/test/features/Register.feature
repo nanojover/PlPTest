@@ -34,8 +34,8 @@ Feature: As an Internet user
       | <email> | <phone> | <password> | <shipments> | <platform> | <ecomerce> |
     Then an error message is displayed: "Client already exists"
     Examples:
-      | email                 | phone     | password | shipments | platform | ecomerce  |
-      | nanojover@hotmail.com | 999999999 | 123456   | 1-10      | Amazon   | pretaShop |
+      | email                       | phone     | password | shipments | platform | ecomerce  |
+      | qacandidateMJ10@packlink.es | 999999999 | 123456   | 1-10      | Amazon   | pretaShop |
 
   @Register-NonValidPassword
   Scenario Outline: Register a user with non valid password
@@ -45,8 +45,8 @@ Feature: As an Internet user
       | <email> | <phone> | <password> | <shipments> | <platform> | <ecomerce> |
     Then an error message is displayed: "Invalid value u'<password>' (unicode): must be at least 6 characters long (at password)"
     Examples:
-      | email                 | phone     | password | shipments | platform | ecomerce  |
-      | nanojover@hotmail.com | 999999999 | 123      | 1-10      | Amazon   | pretaShop |
+      | email                       | phone     | password | shipments | platform | ecomerce  |
+      | qacandidateMJ10@packlink.es | 999999999 | 123      | 1-10      | Amazon   | pretaShop |
 
     #in the scenario bellow validation is missing
   @Register-NonValidValues
