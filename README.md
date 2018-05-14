@@ -6,7 +6,7 @@ Register.feature
 Search.feature
 DraftShipments.feature
 
-You can execute directly in the IDE from the TestRunner file (in Intellij for instance) changing the tag of the test or feature that you want to execute.
+You can execute directly in the IDE from the packlinkPro/src/test/java/TestRunner.java file (for instance in Intellij) changing the tag of the test or feature that you want to execute.
 
 Also you can excute the instruction below including the tag of the scenario that want to run.
 
