@@ -1,0 +1,17 @@
+language: java
+sudo: true
+jdk:
+  - oraclejdk8
+cache:
+  directories:
+    - "$HOME/.m2"
+
+before_cache:
+  - rm -rf $HOME/.m2/repository/com/packlink
+
+before_install:
+  - cp config/maven-settings.xml $HOME/.m2/settings.xml
+  - wget https://github.com/codacy/codacy-coverage-reporter/releases/download/4.0.0/codacy-coverage-reporter-4.0.0-assembly.jar
+
+after_success:
+  - sh travis-codacy-coverage.sh codacy-coverage-reporter-4.0.0-assembly.jar
